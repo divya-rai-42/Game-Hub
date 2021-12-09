@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+</head>
+<body style="background-color: rgb(49, 4, 87);">
+    <h1 style="color: azure; font-family: 'Lobster', cursive; font-size: 50px; text-align: center;">WELCOME TO GAME HUB</h1>
+    <image id="img1" src="tictactoeImage.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 200px; height: 200px; cursor:pointer"></image>
+    <br>
+    <image id="img2" src="brickBreakImage.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 200px; height: 200px; cursor: pointer"></image>
+    <br>
+    <image id="img3" src="snakeLadderImage.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 200px; height: 200px; cursor: pointer"></image>
+
+    <script>
+        let img1 = document.getElementById("img1");
+        let img2 = document.getElementById("img2");
+        let img3 = document.getElementById("img3");
+        img1.addEventListener('mousedown',function(){
+            window.location.href = "./tic tac toe/index.html";
+        });
+        img2.addEventListener('mousedown',function(){
+            window.location.href = "./brick-breaker/index.html";
+        });
+        img3.addEventListener('mousedown',function(){
+            window.location.href = "./snake_ladder/index.html";
+        });
+    </script>
+</body>
+</html>
